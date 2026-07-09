@@ -44,3 +44,42 @@ print(classification_report(y_test, y_pred))
 
 print("--- Confusion Matrix ---")
 print(confusion_matrix(y_test, y_pred))
+
+
+## OUTPUT: 
+
+--- Dataset Preview ---
+   Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm      Species
+0   1            5.1           3.5            1.4           0.2  Iris-setosa
+1   2            4.9           3.0            1.4           0.2  Iris-setosa
+2   3            4.7           3.2            1.3           0.2  Iris-setosa
+3   4            4.6           3.1            1.5           0.2  Iris-setosa
+4   5            5.0           3.6            1.4           0.2  Iris-setosa
+
+--- Species Distribution ---
+Species
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+Name: count, dtype: int64
+
+==============================
+Model Accuracy: 100.00%
+==============================
+
+--- Detailed Classification Report ---
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor       1.00      1.00      1.00        10
+ Iris-virginica       1.00      1.00      1.00        10
+
+       accuracy                           1.00        30
+      macro avg       1.00      1.00      1.00        30
+   weighted avg       1.00      1.00      1.00        30
+
+
+--- Confusion Matrix ---
+[[10  0  0]
+ [ 0 10  0]
+ [ 0  0 10]]
