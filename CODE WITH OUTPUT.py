@@ -50,3 +50,21 @@ plt.savefig('confusion_matrix.png')
 plt.close()
 
 print(f"Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%")
+
+
+   -: OUTPUT :-
+
+==============================
+Model Accuracy: 90.00%
+==============================
+
+--- Detailed Classification Report ---
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor       0.82      0.90      0.86        10
+ Iris-virginica       0.89      0.80      0.84        10
+
+       accuracy                           0.90        30
+      macro avg       0.90      0.90      0.90        30
+   weighted avg       0.90      0.90      0.90        30
